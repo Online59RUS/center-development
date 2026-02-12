@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Каталог сервисов</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__row">
+      <a class="brand" href="index.html">Центр развития</a>
+      <nav class="nav">
+        <a href="create.html">Создание обучения</a>
+        <a href="deliver.html">Проведение</a>
+        <a href="digital.html">Digital</a>
+        <a href="tech.html">Тех.группа</a>
+      </nav>
+    </div>
+  </header>
+
+<main class="container hero">
+  <div class="small" id="brandSubtitle"></div>
+  <div class="h1" id="brandTitle"></div>
+  <p class="lead">
+    Помогаем бизнесу быстро запускать обучение – от сценария и контента до проведения и цифровых решений.
+  </p>
+
+  <div class="heroActions">
+    <a class="btn btn--primary" href="create.html">Открыть каталог</a>
+    <a class="btn btn--ghost" href="#request">Оставить заявку</a>
+  </div>
+
+  <!-- TRUST / AWARD -->
+  <section class="trust">
+    <div class="trust__card">
+      <div class="trust__head">
+        <div class="trust__badge">Награда</div>
+        <div class="trust__title">Премия Digital Learning 2025 (iSpring)</div>
+      </div>
+      <p class="trust__text">
+        Отмечены за вклад в digital-обучение. Сертификат ниже – добавим финальную версию, как только загрузишь файл.
+      </p>
+      <div class="trust__media">
+        <img src="assets/img/ispring-award-2025.PNG" alt="Сертификат Digital Learning 2025" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="trust__stats">
+      <div class="stat">
+        <div class="stat__n">4</div>
+        <div class="stat__t">направления сервиса</div>
+      </div>
+      <div class="stat">
+        <div class="stat__n">Каталог</div>
+        <div class="stat__t">как продукт – быстро выбрать</div>
+      </div>
+      <div class="stat">
+        <div class="stat__n">Заявка</div>
+        <div class="stat__t">в 1 минуту из услуги</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why">
+    <h2 class="h2">Почему Центр развития</h2>
+    <div class="why__grid">
+      <div class="why__item">
+        <div class="why__h">Бизнес-ориентация</div>
+        <div class="why__d">Начинаем с задачи и поведения, а не с “красивого тренинга”.</div>
+      </div>
+      <div class="why__item">
+        <div class="why__h">Скорость запуска</div>
+        <div class="why__d">Шаблоны, методика и готовые механики – меньше лишних итераций.</div>
+      </div>
+      <div class="why__item">
+        <div class="why__h">Форматы под задачу</div>
+        <div class="why__d">Офлайн, онлайн, LMS, сессии, фасилитация – собираем оптимально.</div>
+      </div>
+      <div class="why__item">
+        <div class="why__h">Прозрачный процесс</div>
+        <div class="why__d">Понятно что, кому и в каком виде передаём на выходе.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section class="cases">
+    <div class="cases__head">
+      <h2 class="h2">Примеры того, что делаем</h2>
+      <div class="small muted">Пока демонстрационные карточки – позже заменим на реальные кейсы.</div>
+    </div>
+
+    <div class="cases__grid">
+      <div class="case">
+        <div class="case__t">Навыки крупных продаж</div>
+        <div class="case__m">Формат: онлайн • 2 модуля</div>
+        <div class="case__d">Фокус на выявлении потребностей и СПИН – под полевой контекст.</div>
+      </div>
+      <div class="case">
+        <div class="case__t">Сценарий стратегической сессии</div>
+        <div class="case__m">Формат: офлайн/онлайн</div>
+        <div class="case__d">Методика, блоки, упражнения, тайминг и управляющая презентация.</div>
+      </div>
+      <div class="case">
+        <div class="case__t">Digital-курс для LMS</div>
+        <div class="case__m">Формат: LMS • срок: 1 месяц</div>
+        <div class="case__d">Сценарий, структура, интерактивы, логика прохождения.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG CARDS -->
+  <section class="catalogHome">
+    <div class="catalogHome__head">
+      <h2 class="h2">Каталог сервисов</h2>
+      <div class="small muted">4 направления – выбирай нужный раздел.</div>
+    </div>
+    <div class="cards" id="homeCards"></div>
+  </section>
+
+  <!-- REQUEST FORM (site-internal UI) -->
+  <section class="request" id="request">
+    <div class="request__head">
+      <h2 class="h2">Оставить заявку</h2>
+      <div class="small muted">Форма внутри сайта. Реальную отправку подключим на следующем шаге.</div>
+    </div>
+
+    <form class="form" id="requestForm">
+      <div class="form__row">
+        <label>
+          <span>Имя и фамилия</span>
+          <input name="name" required placeholder="Иван Иванов" />
+        </label>
+        <label>
+          <span>Email</span>
+          <input name="email" type="email" required placeholder="name@company.ru" />
+        </label>
+      </div>
+
+      <div class="form__row">
+        <label>
+          <span>Подразделение/город</span>
+          <input name="unit" placeholder="Например: Урал, Екатеринбург" />
+        </label>
+        <label>
+          <span>Какая услуга интересует</span>
+          <input name="service" placeholder="Например: Навыки крупных продаж (онлайн)" />
+        </label>
+      </div>
+
+      <label>
+        <span>Комментарий</span>
+        <textarea name="comment" rows="4" placeholder="Цель, аудитория, сроки, формат, контекст..."></textarea>
+      </label>
+
+      <div class="form__actions">
+        <button class="btn btn--primary" type="submit">Отправить</button>
+        <div class="small muted" id="requestStatus"></div>
+      </div>
+    </form>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container footer__row">
+
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
