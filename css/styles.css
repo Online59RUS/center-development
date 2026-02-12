@@ -97,7 +97,18 @@ a{color:inherit;text-decoration:none}
   overflow:hidden;
   background:rgba(11,18,32,.02);
 }
-.trust__media img{display:block;width:100%;height:auto}
+.trust__media{
+  border-radius:14px;
+  overflow:hidden;
+}
+
+.trust__media img{
+  display:block;
+  width:100%;
+  height:320px;          /* регулируй 260–380 */
+  object-fit:cover;      /* красиво обрезает */
+}
+
 
 .trust__stats{display:grid;gap:12px}
 .stat{
@@ -164,4 +175,16 @@ a{color:inherit;text-decoration:none}
 }
 .sectionSearch input:focus{
   border-color:rgba(31,60,255,.35);
+}
+
+.trust{align-items:start;}
+.trust__side{
+  position: sticky;
+  top: 88px; /* под вашу шапку, можно 72-96 */
+  align-self: start;
+}
+
+.trust__media img{
+  max-height: 360px;
+  object-fit: cover;
 }
