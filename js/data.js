@@ -2,7 +2,8 @@
 window.SITE = {
   brand: {
     title: "Каталог Сервисов Центра Развития Сен-Гобен",
-    subtitle: "Отдел обучения Департамента Продаж"
+    subtitle: "Отдел обучения Департамента Продаж",
+    requestEndpoint: "https://script.google.com/macros/s/AKfycbzCsTKn7swN6FuRfg0JSpz5ZYer1_DDJPqLlm4gpqM9ngLq1cTtsBAd3n-5UGdxBfu8/exec",
   },
 
   sections: [

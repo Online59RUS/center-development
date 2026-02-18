@@ -92,23 +92,20 @@ a{color:inherit;text-decoration:none}
 .trust__title{font-weight:900}
 .trust__text{color:var(--muted);margin:10px 0 12px}
 .trust__media{
-  border:1px dashed rgba(15,22,41,.22);
   border-radius:14px;
   overflow:hidden;
-  background:rgba(11,18,32,.02);
-}
-.trust__media{
-  border-radius:14px;
-  overflow:hidden;
+  background:#fff;                 /* поля будут белыми */
+  border:1px solid var(--line);
+  padding:14px;                    /* аккуратные поля внутри */
 }
 
 .trust__media img{
   display:block;
   width:100%;
-  height:320px;          /* регулируй 260–380 */
-  object-fit:cover;      /* красиво обрезает */
+  height:320px;                    /* высота блока, можно 260–420 */
+  object-fit:contain;              /* НЕ обрезает */
+  background:#fff;                 /* чтобы поля были единые */
 }
-
 
 .trust__stats{display:grid;gap:12px}
 .stat{
@@ -188,3 +185,40 @@ a{color:inherit;text-decoration:none}
   max-height: 360px;
   object-fit: cover;
 }
+
+/* FORCE FIX: award image fit */
+.trust__media{
+  background:#fff !important;
+  border:1px solid var(--line) !important;
+  border-radius:14px !important;
+  overflow:hidden !important;
+  padding:12px !important;
+}
+
+.trust__media img{
+  width:100% !important;
+  height:240px !important;     /* уменьшили высоту блока */
+  object-fit:contain !important;/* НЕ обрезает */
+  display:block !important;
+  background:#fff !important;
+}
+
+.awardRow{
+  display:flex;
+  gap:14px;
+  align-items:center;
+}
+@media (max-width: 900px){
+  .awardRow{flex-direction:column; align-items:flex-start;}
+}
+.awardImg{
+  width:140px;
+  height:140px;
+  object-fit:contain;
+  border-radius:12px;
+  background:#fff;
+  border:1px solid var(--line);
+  padding:10px;
+}
+.awardName{font-weight:900}
+.awardDesc{color:var(--muted); margin-top:6px; margin-bottom:10px}
