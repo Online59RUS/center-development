@@ -1,6 +1,6 @@
 // data.js
 window.SITE = {
-  requestEndpoint: "https://script.google.com/macros/s/AKfycbzCsTKn7swN6FuRfg0JSpz5ZYer1_DDJPqLlm4gpqM9ngLq1cTtsBAd3n-5UGdxBfu8/exec",
+  requestEndpoint: "https://script.google.com/macros/s/AKfycbxBPO-bPn4SNq7mVRmvuJVA-b4JSVMom7Sjv1VbVjYw1RSzRLktLqbDuoFMTwF7qM1_/exec",
 
   brand: {
     title: "Каталог Сервисов Центра Развития Сен-Гобен",
@@ -38,6 +38,7 @@ window.SITE = {
       id: "create-training",
       section: "create",
       title: "Создание сценария для тренинга",
+      keywords: ["сценарий", "методология", "программа", "структура тренинга", "упражнения", "тайминг", "презентация"],
       badges: ["Офлайн/онлайн"],
       lead: "Улучшите свой процесс обучения с помощью профессионально разработанного сценария обучения.",
       blocks: [
@@ -118,6 +119,7 @@ window.SITE = {
       id: "deliver-big-sales-online",
       section: "deliver",
       title: "Навыки крупных продаж (онлайн)",
+      keywords: ["большие продажи", "большие сделки", "крупные сделки", "ключевые клиенты", "b2b", "спин", "spin", "потребности"],
       badges: ["Онлайн", "ТренингСпейс", "2 модуля по 2 часа"],
       lead: "Продажи без границ. Быстрый старт и прокачка навыков.",
       blocks: [
@@ -164,6 +166,7 @@ window.SITE = {
       id: "deliver-negotiations",
       section: "deliver",
       title: "Навыки переговоров",
+      keywords: ["переговоры", "торг", "скидка", "возражения", "условия", "соглашение", "стратегия", "тактика"],
       badges: ["Офлайн", "6 часов", "Академия/партнер"],
       lead: "Развивайте навыки ведения переговоров и становитесь уверенным переговорщиком.",
       blocks: [
@@ -180,6 +183,7 @@ window.SITE = {
       id: "deliver-disc",
       section: "deliver",
       title: "Поведенческие профили",
+      keywords: ["disc", "диск", "поведение", "коммуникация", "типология", "профиль личности"],
       badges: ["Офлайн", "4 часа", "Академия/партнер"],
       lead: "Изучите теорию поведенческих профилей DISC, определите свой профиль и разработайте действия для эффективной коммуникации.",
       blocks: [
@@ -200,6 +204,7 @@ window.SITE = {
       id: "deliver-facilitation",
       section: "deliver",
       title: "Навыки фасилитации",
+      keywords: ["фасилитация", "модерация", "групповая работа", "воркшоп", "сессия", "стратсессия"],
       badges: ["Офлайн", "4 часа", "Академия/партнер"],
       lead: "Тренинг по теоретическим основам фасилитации и отработке практических навыков.",
       blocks: [

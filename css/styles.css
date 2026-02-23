@@ -222,3 +222,25 @@ a{color:inherit;text-decoration:none}
 }
 .awardName{font-weight:900}
 .awardDesc{color:var(--muted); margin-top:6px; margin-bottom:10px}
+
+.card__desc{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.3;
+  margin-top:6px;
+}
+
+.homeSearch{
+  margin-top:14px;
+}
+.homeSearch input{
+  width:100%;
+  max-width:520px;
+  padding:11px 12px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  font:inherit;
+}
+.homeSearch input:focus{
+  border-color:rgba(31,60,255,.35);
+}
